@@ -1,0 +1,385 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    background-color: #000;
+    color: white;
+    padding: 20px 50px;
+}
+
+.navTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*color search*/
+.search{
+    display:flex;
+    align-items: center;
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 1em; 
+}
+
+/*color input search*/
+.searchInput{
+    border: none;
+    background-color: transparent;
+}
+/*color input search*/
+.searchInput::placeholder{
+    color: lightgray;
+}
+
+.limitedOffer{
+    font-size: 20px;
+    border-bottom: 2px solid green;
+    cursor: pointer;
+}
+
+.navBottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuItem{
+    margin-right: 50px;
+    cursor: pointer;
+    color: lightgray;
+    font-weight: 400;
+}
+
+.slider{
+    background: url(https://cdn.pixabay.com/photo/2020/06/20/19/17/the-black-background-5322097_1280.jpg);
+    clip-path: polygon(0 1%, 100% 0, 89% 88%, 0 100%);
+    overflow: hidden;
+
+}
+
+.sliderWrapper{
+    display: flex;
+    width: 500vw;
+    transition: all 1.5s ease-in-out;
+}
+
+/*Align items*/
+.sliderItem{
+    width: 100vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    margin-top: 0;
+}
+
+/*css icons */
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.featureIcon{
+    width: 50px;
+    height: 50px;
+}
+
+.featureTitle{
+     font-size: 20px;
+     font-weight: 600;
+     margin: 20px;
+}
+
+.featureDesc{
+    color: gray;
+    width: 50%;
+    height: 100px;
+}
+
+
+.sliderBg{
+    width: 750px;
+    height: 700px;
+    border-radius: 50%;
+    position: absolute;
+    
+}
+
+.sliderImg{
+    z-index: 1;
+}
+
+
+.sliderTitle{
+    position: absolute; 
+    top: 10%;
+    right: 10%;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    color: greenyellow;
+    z-index: 1;
+}
+
+.sliderPrice{
+    position: absolute; 
+    top: 10%;
+    left: 10%;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    color: greenyellow;
+    border: 1px solid gray;
+    z-index: 1;
+}
+
+.buyButton{
+    position: absolute; 
+    top: 50%;
+    right: 10%;
+    font-size: 30px;
+    font-weight: 900;
+    color: greenyellow;
+    border: 1px solid gray;
+    background-color: #000;
+    z-index: 1;
+    cursor:pointer;
+    box-shadow: 1px 1px 5px 1px black;
+}
+
+.buyButton:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 1px 1px 5px 1px black;
+}
+
+
+.product{
+    height: 100vh;
+    background-color: whitesmoke;
+    position: relative;
+    clip-path: polygon(0 0, 100% 8%, 100% 100%, 0% 100%);
+}
+
+.payment{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px 50px;
+    display: none;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 0px 27px -3px rgba(0,0,0,0.87); 
+    box-shadow: 0px 0px 27px -3px rgba(0,0,0,0.87);
+}
+
+.payTitle{
+    font-size: 20px;
+    color: lightgray;
+}
+
+label{
+    font-size: 14px; 
+    font-weight: 300;
+}
+ 
+.payInput{
+    padding: 10px;
+    margin: 10 0px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.payInput::placeholder {
+    color: rgb(174, 168, 168);
+    
+}
+
+.sm{
+    width: 30%;
+}
+
+.cardIcons{
+    display: flex;
+}
+
+.cardIcon{
+    margin-right: 10px;
+}
+
+.cardInfo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.payButton{
+    position: absolute;
+    height: 40px;
+    bottom: -40px;
+    width: 100%;
+    left: 0;
+    border: none;
+    -webkit-box-shadow: 0px 0px 27px -3px rgba(0,0,0,0.87); 
+    box-shadow: 0px 0px 27px -3px rgba(0,0,0,0.87);
+    background-color: rgb(24, 164, 24);
+    color: white;
+    cursor: pointer;
+}
+
+.payButton:hover{
+    background-color: green;
+}
+
+.close:hover{
+    background-color: rgb(91, 89, 89);
+}
+.close{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    top: 10px;
+    right: 10px;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.cardIcon{
+    align-items: center;
+}
+
+
+.productImg{
+    width: 50%;
+}
+
+.productDetails{
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 40%;
+    padding: 50px;
+}
+
+.sizes{
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 40%;
+    padding: 10px;
+}
+.productButton{
+    position: absolute; 
+    top: 10%;
+    right: 8%;
+    font-size: 30px;
+    font-weight: 900;
+    color: greenyellow;
+    border: 1px solid gray;
+    background-color: #000;
+    box-shadow: 1px 1px 5px 1px black;
+    z-index: 1;
+    cursor:pointer;
+}
+.productButton:hover{
+    background-color: whitesmoke;
+}
+
+.productTitle{
+    font-size: 75px;
+    font-weight: 900;
+}
+
+.productDesc{
+    font-style: 24px;
+    color: grey;
+}
+
+.colors, .sizes{
+    display: flex;
+
+}
+
+.color{
+    padding: 20px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #000;
+
+}
+
+.color, .sizes{
+    position: relative;
+    border-radius: 5px;
+    display: flex;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.color:last-child{
+    background-color: darkblue;
+}
+
+.size{
+    padding: 5px 20px;
+    border: 1px solid black;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.size:hover{
+    background-color: rgb(17, 17, 38);
+    color: whitesmoke;
+    box-shadow: 1px 1px 5px 1px black;
+}
+
+.productButton:hover{
+    background-color: greenyellow;
+    color: black;
+    box-shadow: 1px 1px 5px 1px black;
+}
+.productButton{
+    background-color: rgb(28, 25, 25);
+    color: white;
+    font-weight: 600;
+}
+
+a{
+    background-color: rgb(28, 25, 25);
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover{
+    display: flex;
+    background-color: greenyellow;
+    color: black;
+    box-shadow: 1px 1px 5px 1px black;
+    border: none;
+}
